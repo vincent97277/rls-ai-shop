@@ -78,7 +78,7 @@ jobs:
     env:
       SMOKE_BASE_URL: ${{ github.event.inputs.target_url || 'https://rls-ai-shop.vercel.app' }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - uses: pnpm/action-setup@v6
         # V2.3.6: pnpm version comes from package.json `packageManager` field
